@@ -1,17 +1,87 @@
-* {
-  margin:0px;
-  padding:0px;
-}
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+body{
+	margin: 0;
+	padding: 0;
+	background: #eee;
+	background-color: #eee;
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
 }
+#menu{
+	margin: 0;
+	padding: 0;
+	margin-top: 100px;
+}
+#menu li{
+	list-style: none;
+	display: inline-block;
+}
+#menu li a{
+	right: 15px;
+	text-decoration: none;
+	position: relative;
+	color: #313131;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: sans-serif;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+    padding: 8px 5px;
+    text-transform: uppercase;
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
+#menu li a:before{
+	content: '';
+	width: 60px;
+	position: absolute;
+	border-bottom: 8px solid #313131;
+	bottom: 0;
+	right: 350px;
+	transition: 0.7s all;
+
+}
+#menu li a:hover:before{
+	right: 0;
+
+}
+.search-box{
+	text-align: right;
+	position: absolute;
+	top: 160px;
+	right: 230px;
+	transform: translate(-50%,-50%);
+	background: #2f3640;
+	height: 20px;
+	border-radius: 20px;
+	padding: 10px;
+}
+.search-box:hover> .search-txt{
+	width: 80px;
+	padding: 0 6px;
+	float: right;
+	padding-right: 100px;
+}
+.search-btn{
+	color: #e84118;
+	float: right;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: right;
+	padding: 0;
+	color: white;
+	font-size: 15px;
+	transition: 2s;
+	line-height: 20px;
+	width: 0px;
+
